@@ -191,7 +191,3 @@ For issues, suggestions, or contributions, feel free to [open an issue](https://
 ---
 
 **Crafted with 💻 by [Félix Domingos](https://github.com/felixdomingos1)**
-
----
-
-Se quiser, posso gerar esse README já formatado como arquivo `.md`. Deseja que eu crie e envie o conteúdo para download?
