@@ -7,8 +7,9 @@
     "build": "tsc",
     "dev": "ts-node src/app.ts",
     "lint": "eslint . --ext .ts",
-    "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test": "jest --config jest.config.ts --coverage",
+    "test:watch": "jest --config jest.config.ts --watch",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --config jest.config.ts --runInBand"
   },
   "jest": {
     "preset": "ts-jest",
@@ -24,12 +25,14 @@
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.32.0",
+    "@jest/globals": "^30.0.5",
     "@types/express": "^5.0.3",
     "@types/jest": "^30.0.0",
     "@types/multer": "^2.0.0",
     "@types/node": "^24.2.0",
     "@types/nodemailer": "^6.4.17",
     "@types/pdf-parse": "^1.1.5",
+    "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
     "eslint": "^9.32.0",
@@ -40,6 +43,7 @@
     "jest": "^30.0.5",
     "jiti": "^2.5.1",
     "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
     "ts-jest": "^29.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",

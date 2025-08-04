@@ -3,7 +3,7 @@ import cors from 'cors';
 import cvRoutes from './routes/cv.routes';
 import emailRoutes from './routes/email.routes';
 
-const app = express();
+export const app = express();
 
 app.use(cors());
 app.use(express.json());
